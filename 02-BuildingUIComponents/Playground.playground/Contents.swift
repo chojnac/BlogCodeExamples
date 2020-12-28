@@ -30,9 +30,9 @@ class Custom1Button: UIButton {
 
     private func setupStyle() {
         switch style {
-            case .primary:
+        case .primary:
             setupPrimaryStyle()
-            case .secondary:
+        case .secondary:
             setupSecondaryStyle()
         }
         updateStyle()
@@ -40,9 +40,9 @@ class Custom1Button: UIButton {
 
     private func updateStyle() {
         switch style {
-            case .primary:
+        case .primary:
             updatePrimaryStyle()
-            case .secondary:
+        case .secondary:
             updateSecondaryStyle()
         }
     }
