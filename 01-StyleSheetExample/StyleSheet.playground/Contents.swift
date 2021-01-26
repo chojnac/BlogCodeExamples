@@ -80,22 +80,22 @@ extension AppStyleSheet {
 
     static let primaryButtonStyle: AppStyle<UIButton> = concat([
         baseButtonStyle,
-        AppStyleSheet.Mixins.border(color: .black)
+        Mixins.border(color: .black)
     ])
 
     static let secondaryButtonStyle: AppStyle<UIButton> = concat([
         baseButtonStyle,
-        AppStyleSheet.Mixins.base(backgroundColor: .clear),
-        AppStyleSheet.Mixins.border(width: 0),
-        AppStyleSheet.Mixins.button(titleColor: .blue, for: .normal)
+        Mixins.base(backgroundColor: .clear),
+        Mixins.border(width: 0),
+        Mixins.button(titleColor: .blue, for: .normal)
     ])
-
 }
 
 class CustomOldSwitch: UISwitch {
     enum ComponentStyle {
         case `default`
         case custom1
+        // ... more styles in the future
     }
     private let componentStyle: ComponentStyle
 
